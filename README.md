@@ -6,13 +6,13 @@ Ad-hoc testing is very easy with swagger and that is sufficient for a simple api
 
 ## Running
 
-Scramblies-api relies on the scramblies project. Currently this is linked as a checkout, so switch to scramblies and do a lein install.
+Scramblies-api relies on the scramblies project. Currently this is linked as a checkout, so switch to scramblies and do a lein install. The link expects to find the scramblies project in the same directory as the scramblies-api project. Adjust the symbolic link in scramblies-api/checkout if this is not the case.
 
 Then start the web server in scramblies-api by doing:
 
     lein run 
 
-Then open a browser and point it to localhost:3000/swagger-ui to test or inspect how to call the API from the UI program.
+Open a browser and point it to localhost:3000/swagger-ui to test or inspect how to call the API from the UI program.
 
 ## License
 
