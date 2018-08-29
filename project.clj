@@ -26,10 +26,11 @@
                  [ring-webjars "0.2.0"]
                  [ring/ring-core "1.6.3"]
                  [ring/ring-defaults "0.3.2"]
-                 [selmer "1.12.0"]]
+                 [selmer "1.12.0"]
+                 [scramblies "0.0.1-SNAPSHOT"]]
 
   :min-lein-version "2.0.0"
-  
+
   :source-paths ["src/clj"]
   :test-paths ["test/clj"]
   :resource-paths ["resources"]
@@ -55,7 +56,7 @@
                                  [ring/ring-devel "1.6.3"]
                                  [ring/ring-mock "0.3.2"]]
                   :plugins      [[com.jakemccrary/lein-test-refresh "0.23.0"]]
-                  
+
                   :source-paths ["env/dev/clj"]
                   :resource-paths ["env/dev/resources"]
                   :repl-options {:init-ns user}

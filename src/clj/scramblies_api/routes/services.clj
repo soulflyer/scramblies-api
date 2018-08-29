@@ -1,7 +1,8 @@
 (ns scramblies-api.routes.services
   (:require [ring.util.http-response :refer :all]
             [compojure.api.sweet :refer :all]
-            [schema.core :as s]))
+            [schema.core :as s]
+            [scramblies.core :as scramblies]))
 
 (defapi service-routes
   {:swagger {:ui "/swagger-ui"
@@ -17,4 +18,4 @@
       :return Boolean
       :path-params [str1 :- String, str2 :- String]
       :summary "searches for str2 in str1"
-      (ok (= str1 str2)))))
+      (ok (scramblies/scramble? str1 str2)))))

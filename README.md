@@ -6,7 +6,9 @@ Ad-hoc testing is very easy with swagger and that is sufficient for a simple api
 
 ## Running
 
-To start a web server for the application, run:
+Scramblies-api relies on the scramblies project. Currently this is linked as a checkout, so switch to scramblies and do a lein install.
+
+Then start the web server in scramblies-api by doing:
 
     lein run 
 
